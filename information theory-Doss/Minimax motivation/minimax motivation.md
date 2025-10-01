@@ -1,1 +1,1 @@
-try
+For Kernel density estimator $\hat p_n(x)=\frac{1}{nh}\sum_{i=1}^nK(\frac{x-x_i}{h})$ with a kernel $K(t)$ and bandwidth $h$, one can define the 
