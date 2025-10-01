@@ -13,12 +13,11 @@ And an order condition, order 1 if $\int uK(u)du=0$, sometimes also use order 2,
 The MISE is the summation of the bias and variance
 
 Under the above conditions(with order 1 condition) and $p$ being smooth with absolutely continuous $p'$ and $\int [p''(x)]^2dx<\infty$, one can write
-$$
-\begin{align*}
+$\begin{align*}
 MISE&=\mathbb E_p\int[\hat p_n(x)-p(x)]^2dx\\
 &=[\underbrace{\frac{1}{nh}\int K^2(u)du}_{\text{variance}}+\underbrace{\frac{h^4}{4}S_K^2\int(p''(x))^2dx}_\text{bias}](1+o(1))
-\end{align*}
-$$
+\end{align*}$
+
 where the terms other than n and h are treated as constants. 
 
 Restric $K$ to be **nonnegative Kernel**, one can always obtain Epanechnikov oracle MISE result with Epanechnikov Kernel $K^*(u)=\frac{3}{4}(1-u^2)_+$ and bandwidth $h^{MISE}(K)=\left(\frac{\int K^2}{nS_K^2\int (p'')^2dx}\right)^{1/5}$, Therefore $n^{4/5}MISE\to C$.
